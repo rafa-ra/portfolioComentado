@@ -11,18 +11,21 @@ import {
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 
+//Recebe parâmetro "color" e exporta componente de header
 export default function Header({ color }) {
+  //Importa info inputada pelo usuário no arquivo md
   const profile = ProfileArray();
+
+  //Função de scroll para seção de contato
+  //usando métodos querySelector e scrollIntoView
   const scrollToContact = () => {
     const contactSection = document.querySelector("#contact");
     contactSection.scrollIntoView({ behavior: "smooth" });
   };
+
+  //handler do onClick
   const linkedin = () => {
-    window.open(
-                `${profile.linkedin}`,
-                "_blank",
-                "noreferrer,noopener"
-              );
+    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
   };
   return (
     <>
