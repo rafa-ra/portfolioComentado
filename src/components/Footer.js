@@ -1,3 +1,8 @@
+//------------------------CHAKRA UI------------------------------------
+//Comentários gerais sobre o funcionamento da biblioteca de componentes
+//Chakra UI se encontram no arquivo "src/comentariosChakraUI.txt"------
+
+//Importa os componentes do Chakra UI
 import {
   Box,
   Container,
@@ -8,6 +13,7 @@ import {
 
 //Exporta componente de footer
 export default function Footer() {
+  //Retorna o JSX
   return (
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}

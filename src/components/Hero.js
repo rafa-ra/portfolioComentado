@@ -1,3 +1,8 @@
+//------------------------CHAKRA UI------------------------------------
+//Comentários gerais sobre o funcionamento da biblioteca de componentes
+//Chakra UI se encontram no arquivo "src/comentariosChakraUI.txt"------
+
+//Importa os componentes do chakra-ui
 import {
   Box,
   Heading,
@@ -9,6 +14,7 @@ import {
   useColorModeValue,
   createIcon,
 } from "@chakra-ui/react";
+//Importa informações do usuário
 import ProfileArray from "./ProfileArray";
 
 //Recebe parâmetro "color" e exporta componente de header

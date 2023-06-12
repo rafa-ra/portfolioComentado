@@ -1,3 +1,8 @@
+//------------------------CHAKRA UI------------------------------------
+//Comentários gerais sobre o funcionamento da biblioteca de componentes
+//Chakra UI se encontram no arquivo "src/comentariosChakraUI.txt"------
+
+//Importa os componentes do chakra-ui
 import {
   Flex,
   Button,
@@ -14,9 +19,13 @@ import {
   HStack,
   Link,
 } from "@chakra-ui/react";
+//Importa os ícones do chakra-ui
 import { MoonIcon, SunIcon, HamburgerIcon } from "@chakra-ui/icons";
+//Importa useState
 import { useState } from "react";
+//Importa informações do usuário
 import ProfileArray from "./ProfileArray";
+//Importa ícones do react-icons
 const TbIcons = require("react-icons/tb");
 
 //Navbar recebendo parâmetro de cor e sendo exportado
