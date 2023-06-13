@@ -13,7 +13,7 @@ import {
   Heading,
   Center,
 } from "@chakra-ui/react";
-//Importa ícones do react-icons
+//Importa ícones do react-icons .
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 //Importa as informações do usuário
 import ProfileArray from "./ProfileArray";

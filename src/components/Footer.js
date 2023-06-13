@@ -20,7 +20,13 @@ export default function Footer() {
       color={useColorModeValue("gray.700", "gray.200")}
     >
       <Container as={Stack} maxW={"6xl"} py={4} align="center">
-        <Text>© 2023 Eldora Boo. All rights reserved</Text>
+        <a
+          href="https://github.com/rafa-ra/portfolioComentado"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <Text>© 2023 Eldora Boo. All rights reserved</Text>
+        </a>
       </Container>
     </Box>
   );
