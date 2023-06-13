@@ -1,5 +1,5 @@
 # Portfolio Adaptável
-Este repositório é uma réplica comentada do projeto desenvolvido por Eldora Boo.
+<b>Este repositório é uma réplica comentada do projeto desenvolvido por Eldora Boo</b>.
 <hr>
 
 O objetivo deste projeto foi comentar toda a lógica de programação em Javascript e React a fim de evidenciar o profundo entendimento da implementação da aplicação, além de lapidar a habilidade de leitura e compreensão de código desenvolvido por terceiros.
