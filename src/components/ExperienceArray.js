@@ -10,7 +10,7 @@ const parseExperience = (mdContent) => {
   //separando por quebra de linha '\n'
   const lines = mdContent.split("\n");
 
-  //for loop itera sobre a array de conteúdos, quebrada acima
+  //for loop itera sobre a array de conteúdos, dividida acima
   for (let i = 0; i < lines.length; i++) {
     //atribui o item em iteração à variável 'line'
     const line = lines[i];
@@ -32,7 +32,7 @@ const parseExperience = (mdContent) => {
       const duration = positionLine[1].trim();
       //Atribui o conteúdo string da linha seguinte à variável imageLine
       const imageLine = lines[++i];
-      //Regex: checa o formato do path informado
+      //Regex: retorna o valor condizente com formato indicado no regex
       const image = imageLine.match(/!\[(.*)\]\((.*)\)/)[2];
       //Atribui à variável 'tags' o conteúdo da linha seguinte, após tratamento da string
       const tags = lines[++i].split(":")[1].trim();
