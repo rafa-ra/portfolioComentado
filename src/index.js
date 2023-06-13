@@ -1,19 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+//Importa react
+import React from "react";
+//Importa reactDOM
+import ReactDOM from "react-dom/client";
+//Importa script de cores (dark / day mode)
 import { ColorModeScript } from "@chakra-ui/react";
-import './index.css';
-import App from './App';
+//Importa estilização
+import "./index.css";
+//importa arquivo app
+import App from "./App";
+//Importa o tema escolhido pelo usuário no arquivo abaixo
 import theme from "./theme";
-import reportWebVitals from './reportWebVitals';
-// 1. Import the extendTheme function
+//importa webvitals
+import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <ChakraProvider theme={theme}>
     <React.StrictMode>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-      <App/>
+      <App />
     </React.StrictMode>
   </ChakraProvider>
 );

@@ -1,12 +1,13 @@
-import React from 'react';
-import './App.css';
-import Nav from './components/NavBar';
-import Header from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+//Importa a estilização para este arquivo
+import "./App.css";
+//Importa os componentes autorais
+import Nav from "./components/NavBar";
+import Header from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   // Available Colours:
@@ -15,6 +16,7 @@ function App() {
   // edit this variable to change the color theme
   const color = "teal";
 
+  //JSX
   return (
     <>
       <Nav color={color} />
@@ -28,4 +30,5 @@ function App() {
   );
 }
 
+//Exporta o app
 export default App;

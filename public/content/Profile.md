@@ -2,9 +2,9 @@
 - Portable Portfolio
 
 ## Header
-- Olá, meu nome é Rafael.
-- Eu sou um Web dev
-- Vamos tomar um café?
+- Hi, my name is Eldora.
+- I'm a software engineer.
+- I build solutions for the web
 
 ## About
 Write your "About" section here.
