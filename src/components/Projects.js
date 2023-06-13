@@ -1,3 +1,8 @@
+//------------------------CHAKRA UI------------------------------------
+//Comentários gerais sobre o funcionamento da biblioteca de componentes
+//Chakra UI se encontram no arquivo "src/comentariosChakraUI.txt"------
+
+//Importa os componentes do Chakra UI
 import {
   Divider,
   Stack,
@@ -16,23 +21,33 @@ import {
   Link,
   Center,
 } from "@chakra-ui/react";
+//Importa a animação "Fade" da biblioteca "react-reveal"
 import { Fade } from "react-reveal";
+//Importa useState do react
 import { useState } from "react";
+//Importa as informações de projetos do usuário
 import ProjectsArray from "./ProjectsArray";
+//Importa as informações de projetos do usuário
 import OtherProjectsArray from "./OtherProjectsArray";
+//Importa tags do usuário
 import TagsArray from "./TagsArray";
 
+//recebe o parâmetro de cor e exporta a função
 export default function Projects({ color }) {
-    const projects = ProjectsArray();
-    const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
-    
-    const [selected, setSelected] = useState("All");
+  //chama as funções de informações do usuário e atribui às respectivas variáveis
+  const projects = ProjectsArray();
+  const others = OtherProjectsArray();
+  const options = TagsArray("ProjectsTags");
 
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
-    
+  //inicia o estado com valor default de 'All'
+  const [selected, setSelected] = useState("All");
+
+  //handler do método onClick que atribui o valor ao estado 'selected'
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
+
+  //JSX
   return (
     <>
       <Container maxW={"3xl"} id="projects">

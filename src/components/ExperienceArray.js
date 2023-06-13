@@ -1,7 +1,7 @@
 //Importa os hooks do react
 import { useState, useEffect } from "react";
 
-//função que recebe o conteúdo do usuáriocomo parâmetro
+//função que recebe o conteúdo do usuário como parâmetro
 //e retorna um array populado
 const parseExperience = (mdContent) => {
   //cria uma array vazia
