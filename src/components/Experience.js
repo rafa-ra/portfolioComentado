@@ -1,3 +1,8 @@
+//------------------------CHAKRA UI------------------------------------
+//Comentários gerais sobre o funcionamento da biblioteca de componentes
+//Chakra UI se encontram no arquivo "src/comentariosChakraUI.txt"------
+
+//Importa os componentes do Chakra UI
 import {
   Divider,
   Stack,
@@ -19,27 +24,43 @@ import {
   ButtonGroup,
   Center,
 } from "@chakra-ui/react";
+//Importa ícone do Chakra UI
 import { ChevronRightIcon } from "@chakra-ui/icons";
+//Importa a animação "Fade" da biblioteca "react-reveal"
 import { Fade } from "react-reveal";
+//Importa os hooks do react
 import { useState, useEffect } from "react";
+//Importa as informações da experiência do usuário
 import ExperienceArray from "./ExperienceArray";
+//Importa tags do usuário
 import TagsArray from "./TagsArray";
 
+//Recebe parâmetro "color" e exporta componente
 export default function Experience({ color }) {
+  //Atribui as informações de experiência do usuário à variável "experience"
   const experience = ExperienceArray();
+  //Atribui as tags de experiência do usuário à variável options
   const options = TagsArray("ExperienceTags");
+  //Inicia o estado "selected", que controlará a
+  //estilização do botão e a renderização da respectiva experiência
   const [selected, setSelected] = useState("");
 
+  //useEffect que rodará na primeira renderização e
+  //todas as vezes que a variável options, que contém
+  //as tags de experiência, seja alterada
   useEffect(() => {
     if (options.length > 0) {
       setSelected(options[0].value);
     }
   }, [options]);
-  
+
+  //Função utilizada no método onClick dos
+  //botões de categorias da seção
   const handleSelected = (value) => {
     setSelected(value);
   };
 
+  //retorna o JSX
   return (
     <>
       <Container maxW={"3xl"} id="experience">
